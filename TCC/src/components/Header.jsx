@@ -1,5 +1,7 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
+import { Nav } from 'react-bootstrap';
+import NavbarToggle from 'react-bootstrap/NavbarToggle'
 
 
 
@@ -7,15 +9,18 @@ import Container from 'react-bootstrap/Container';
 function Header() {
     return(
         <>
-            <Navbar className="bg-body-tertiary">
+            <Navbar expand="lg" className="bg-body-tertiary shadow-sm">
                 <Container>
-                    <Navbar.Brand className='flex justify-center '> 
-                        <h1 className='rubik text-[40px]'>Galeria do Frei</h1>
-                    </Navbar.Brand>
+                    <Navbar.Brand className=''>Galeria do Frei</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Nav classname="me-auto flex  justify-content-end">
+                        <Nav.Link href="#sobre" classname=''>Sobre o Projeto</Nav.Link>
+                        <Nav.Link href="#fotos" classname="">Fotos</Nav.Link>
+                    </Nav>
                 </Container>
             </Navbar>
         </>
-    )
-}
+    ) 
+} 
 
 export default Header
