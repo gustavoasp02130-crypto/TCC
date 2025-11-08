@@ -1,3 +1,4 @@
+import Direitos from './components/Direitos.jsx';
 import Galeria from './components/Galeria.jsx'
 import Header from './components/Header.jsx'
 import Sobre from './components/Sobre.jsx'
@@ -9,7 +10,8 @@ function App(){
     <>
         <Header/>
         <Sobre/>
-        <Galeria/>  
+        <Galeria/>
+        <Direitos/>
     </>
    )
 }
